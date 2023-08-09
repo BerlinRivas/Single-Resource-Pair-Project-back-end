@@ -5,7 +5,7 @@ function Game({ game }) {
     <tr>
       <td>
         {game.is_favorite ? (
-          <span>⭐️</span>
+          <span>👍</span>
         ) : (
           <span>&nbsp; &nbsp; &nbsp;</span>
         )}
@@ -16,7 +16,7 @@ function Game({ game }) {
         </a>
       </td>
       <td>
-        <Link to={`/games/${game.id}`}>✏️</Link>
+        <Link to={`/games/${game.id}`}>➡️</Link>
       </td>
     </tr>
   );

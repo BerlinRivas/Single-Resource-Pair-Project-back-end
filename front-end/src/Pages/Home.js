@@ -1,23 +1,9 @@
-// function Home() {
-//     return (
-//      <>
-//      <img className="kratos" src="https://www.pngmart.com/files/22/Fortnite-Kratos-PNG-Photo.png" alt=""></img>
-//      <img className="halo" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a8baa77f-c488-4769-bb75-a8a228144b41/debw2vq-26be5f8e-e91e-4009-b8f8-a56114f7efbe.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E4YmFhNzdmLWM0ODgtNDc2OS1iYjc1LWE4YTIyODE0NGI0MVwvZGVidzJ2cS0yNmJlNWY4ZS1lOTFlLTQwMDktYjhmOC1hNTYxMTRmN2VmYmUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.2Y1e2-K8UFgLruzqOct38BZCgN0D16VsS98j55F5lJ8" alt=""></img>
-//      <div class="home-txt">
-//         <h2 class="typing-text">Unleash your gaming prowess and conquer new realms</h2>
-//     </div>
-     
-     
-//      </>
-//     );
-//   }
-  
-//   export default Home;
+
   
 import React, { useEffect } from 'react';
 
 const TypingAnimation = () => {
-  const textArray = ['Welcome', 'Unleash your inner gamer'];
+  const textArray = ['Welcome to Gamify', 'Unleash your inner gamer'];
   const [index, setIndex] = React.useState(0);
   const [typing, setTyping] = React.useState(true);
   const [text, setText] = React.useState('');
@@ -78,6 +64,7 @@ const Home = () => {
 
   return (
     <>
+    
       <img
         className="kratos"
         src="https://www.pngmart.com/files/22/Fortnite-Kratos-PNG-Photo.png"
@@ -89,6 +76,7 @@ const Home = () => {
         alt=""
       />
       <TypingAnimation /> 
+      <iframe width="700" height="395" src="https://www.youtube.com/embed/5BTdDXNZPtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       
     </>
   );

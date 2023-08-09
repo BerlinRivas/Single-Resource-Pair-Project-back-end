@@ -163,12 +163,50 @@ label {
   color: #999;
 }
 
-
+/* 
 .showNavigation {
   display: flex;
   justify-content: space-around;
   width: 50%;
+} */
+
+.showNavigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
 }
+
+.showNavigation a {
+  text-decoration: none;
+}
+
+.showNavigation button {
+  background-color: hsl(193, 86%, 44%);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.showNavigation button:hover {
+  background-color: #1777a7;
+}
+
+.showNavigation button:active {
+  background-color: #1da0e1;
+}
+
+.showNavigation button.delete {
+  background-color: #e74c3c;
+}
+
+.showNavigation button.delete:hover {
+  background-color: #c0392b;
+}
+
 
 /* img {
   height: 20px;
@@ -180,6 +218,7 @@ label {
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  background-color: black;
 }
 
 
@@ -271,51 +310,31 @@ html, body {
   background-color:  #2fa4c4;
 }
 
-.google {
-position: absolute;
-top: 50%;
-left:35%;
-height: 50px
-}
-
-.apple {
-position: absolute;
-top: 50%;
-left:45%;
-height: 50px
-}
-
-.person {
-position: relative;
-left: 900px; 
-height: 600px;
-}
-
 
 .warning {
 position: absolute;
-left: 35%;
+left: 20%;
 top:35%;
 height: 200px;
 }
 
 .fourofour {
 position: absolute;
-left: 50%;
+left: 35%;
 top: 40%;
 }
 
 .fourofour-txt {
 position: absolute;
-left: 50%;
+left: 35%;
 top: 45%
 
 }
 
 .warn-link {
 position: absolute;
-left: 50%;
-top: 55%
+left: 35%;
+top: 50%
 }
 
 .kratos {
@@ -420,4 +439,80 @@ html, body {
 }
 .g {
   color: red;
+}
+
+iframe {
+  position: absolute;
+  top: 35%;
+  right: 25%
+
+}
+
+.playstation {
+  position: absolute;
+  top: 12%;
+  right: 28%
+}
+
+.xbox {
+  position: absolute;
+  top: 12%;
+  right: 28%
+}
+
+/* .playstation-acc {
+  height: 300px;
+  margin-top: 350px;
+  margin-left: -70px;
+} */
+
+.edit {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  outline: none;
+}
+
+.edit:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Apply the same styling as input[type="text"], input[type="email"], and textarea */
+.edit, input[type="text"], input[type="email"], textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+/* Apply the same styling as input[type="checkbox"] */
+.edit[type="checkbox"] {
+  margin: 0;
+  width: 15%;
+}
+
+
+.title-sony {
+  position: absolute;
+  top: 65%;
+  right: 51%
+}
+
+.title-microsoft {
+  position: absolute;
+  top: 65%;
+  right: 46%
 }

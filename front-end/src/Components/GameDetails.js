@@ -39,14 +39,15 @@ function GameDetails() {
 
     return (
         <article>
-        <h3>{true ? <span>⭐️</span> : null} {game.name}</h3>
+        <h1>{true ? <span>👍</span> : null} {game.name}</h1>
         <h5>
           <span>
-            <a href={game.url}>{game.name}</a>
+            <h2>{game.genre}</h2>
           </span>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {game.url}
+          {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {game.url} */}
+          <h3>{game.release_date}</h3>
         </h5>
-        <h6>{game.genre}</h6>
+        {/* <h6>{game.genre}</h6> */}
         <p>{game.description}</p>
         <div className="showNavigation">
           <div>
@@ -60,7 +61,7 @@ function GameDetails() {
             </Link>
           </div>
           <div>
-            <button onClick={handleDelete}>Delete</button>
+            <button className="delete" onClick={handleDelete}>Delete</button>
           </div>
         </div>
       </article>

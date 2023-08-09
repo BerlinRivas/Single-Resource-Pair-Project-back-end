@@ -95,7 +95,7 @@ function GameEditForm() {
             <input type="submit" />
           </form>
           <Link to={`/games/${id}`}>
-            <button>Nevermind!</button>
+            <button className="edit">Nevermind!</button>
           </Link>
         </div>
       );
